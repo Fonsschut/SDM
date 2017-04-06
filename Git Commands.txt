@@ -1,0 +1,39 @@
+//Lists branches
+git branch 
+
+//move to given branch or master							
+git checkout <branchname> 	
+
+//pull updates from master branch				
+git pull origin master	
+
+//checks changes on branch					
+git status	
+	
+//add all additions and deletions.					
+git add --all	
+
+//check if what's about to be added is correct						
+git status	
+
+//commit changes to branch						
+git commit -m "a commit message in the present tense"
+
+//pushed branch to master		
+git push origin my--branch					
+
+
+Fetching remote folders/branches to copy for local use
+-------------------------------------------------------------
+//fetch branch, all branches, make local work copy/checkout
+git fetch origin						
+git branch -v -a						
+git checkout -b <branchname> origin/<branchname>		
+
+-------------------------------------------------------------
+//delete local and remote branch
+git push origin --delete <branch_name>
+git branch -D <branch_name>
+
+//get difference between selected branch locally with remote branch
+git remote update
