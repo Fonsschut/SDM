@@ -7,6 +7,11 @@ git status							//check if what's about to be added is correct
 git commit -m "a commit message in the present tense"		//commit changes to branch
 git push origin my--brach					//pushed branch to master
 
-git fetch origin						//fetch a branch
-git branch -v -a						//fetch all remote branches
-git checkout -b <branchname> origin/<branchname>		//make local work copy/checkout
+//fetch branch, all branches, make local work copy/checkout
+git fetch origin						
+git branch -v -a						
+git checkout -b <branchname> origin/<branchname>		
+
+//delete local and remote branch
+git push origin --delete <branch_name>
+git branch -D <branch_name>
